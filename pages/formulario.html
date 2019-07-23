@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <html lang="pt-br">
+
+    </html>
+    <title>Formularios de pedidos</title>
+</head>
+<header>
+    <a href="../index.html">Página Inicial</a>
+</header>
+
+<body>
+    <br>
+    <!-- Comando para enviar os dados do formulario para uma pagina  -->
+    <form action="processa.php" method="post">
+        <label>Gentileza, informe seu nome no campo solicitado :</label>
+        <input type="text" name="Insira o texto" placeholder="Digite seu nome"><br>
+        <label>Por gentileza, informe sua senha de compra:</label>
+        <input type="password" name="Insira a sua senha" placeholder="Senha de compra"><br>
+        <input type="hidden" name="Esses dados foram confirmados" value="Dados confirmados">
+        <label>Modelo:</label>
+        <select name="Modelo">
+            <option value="BMW 320i">BMW 320i</option>
+            <option value="BMW 320i">BMW 325i</option>
+            <option value="BMW 320i">BMW Z4</option>
+        </select>
+        <br>
+        <label>Modelo do motor</label><br>
+        <input type="radio" name="Motor" value="2.0"> Motor 2.0
+        <input type="radio" name="Motor" value="2.4"> Motor 2.4
+        <br>
+        <label>Acessórios:</label><br>
+        <!-- Se colocar o parametro "checked" no input ele já vai começar marcado -->
+        <input type="checkbox" name="Commodities" value="Ar-Condicionado">Ar-Condicionado
+        <input type="checkbox" name="Commodities" value="Direção hidraulica">Direção Hidráulica
+        <input type="checkbox" name="Commodities" value="Air-Bag">Air-Bag
+        <br>
+        <input type="submit" value="Solicitar" name="Solicitar">
+        <input type="reset" value="Cancelar" name="Cancelar">
+
+    </form>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
